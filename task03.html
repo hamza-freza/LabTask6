@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 03 - Continental Hotel Reservation Form</title>
+    <style>
+        body {
+            background-color: #dcdcdc;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            text-align: center;
+        }
+
+        h2 {
+            color: red;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: #cce5ff;
+            border: 2px solid #000;
+            width: 450px;
+        }
+
+        td {
+            border: 1px solid #708090;
+            padding: 6px 10px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        td.label {
+            font-weight: bold;
+            text-align: right;
+            width: 35%;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 3px;
+            border: 1px solid #a9a9a9;
+        }
+
+        .input-half {
+            width: 42% !important;
+            display: inline-block;
+        }
+
+        .submit-cell {
+            text-align: center;
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 3px 15px;
+            cursor: pointer;
+            border: 1px solid #777;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Continental Hotel Reservation Form</h2>
+        <table>
+            <tr>
+                <td class="label">Name</td>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td class="label">eMail</td>
+                <td><input type="text" value="info@continental.pk"></td>
+            </tr>
+            <tr>
+                <td class="label">Mobile No</td>
+                <td><input type="text" placeholder="Enter your cell number"></td>
+            </tr>
+            <tr>
+                <td class="label">Arrival Time</td>
+                <td><input type="text" placeholder="Enter your arrival time"></td>
+            </tr>
+            <tr>
+                <td class="label">Departure</td>
+                <td>
+                    <input type="text" class="input-half">
+                    <input type="text" class="input-half">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Room Type</td>
+                <td>
+                    <input type="radio" name="room" id="single"><label for="single">Single</label>
+                    <input type="radio" name="room" id="double"><label for="double">Double</label><br>
+                    <input type="radio" name="room" id="presidential"><label for="presidential">Presidential Suite</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Preferences</td>
+                <td>
+                    <input type="checkbox" id="nonsmoking"><label for="nonsmoking">Non-Smoking</label><br>
+                    <input type="checkbox" id="internet"><label for="internet">Internet</label><br>
+                    <input type="checkbox" id="mattress"><label for="mattress">Firm Mattress</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Mode of Payment</td>
+                <td>
+                    <input type="checkbox" id="cash"><label for="cash">Cash</label>
+                    <input type="checkbox" id="check"><label for="check">Check</label><br>
+                    <input type="checkbox" id="card"><label for="card">Credit Card</label>
+                    <select>
+                        <option>Select Card</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="submit-cell">
+                    <input type="submit" value="Send Data">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
